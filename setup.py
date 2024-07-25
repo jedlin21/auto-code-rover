@@ -13,7 +13,7 @@ setup(
     python_requires='>=3.10',
     install_requires=[
         'loguru==0.7.2',
-        'requests==2.33.2',
+        'requests>=2.33.2',
         'rich==13.7.1',
         'annotated-types==0.6.0',
         'anyio==4.2.0',
