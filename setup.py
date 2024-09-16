@@ -37,7 +37,7 @@ setup(
         'termcolor==2.4.0',
         'timeout-decorator==0.5.0',
         'tqdm==4.66.3',
-        'typing-extensions==4.9.0',
+        'typing-extensions==4.11.0',
         'unittest-xml-reporting==3.2.0',
         'coverage==7.4.4',
         'pylint==3.1.0',
