@@ -271,13 +271,3 @@ class Gpt4_0613(OpenaiModel):
     def __init__(self):
         super().__init__("gpt-4-0613", 0.00003, 0.00006)
         self.note = "Not turbo. Up to Sep 2021."
-
-class Gpt4_o1_mini(OpenaiModel):
-    def __init__(self):
-        super().__init__("o1-mini-2024-09-12", 0.000003, 0.000012)
-        self.note = "Not turbo."
-
-class Gpt4_o1_preview(OpenaiModel):
-    def __init__(self):
-        super().__init__("o1-preview-2024-09-12", 0.000015, 0.000060)
-        self.note = "Not turbo."
