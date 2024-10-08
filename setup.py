@@ -28,7 +28,7 @@ setup(
         'idna==3.6',
         'lxml==5.1.0',
         'openai>=1.30.0',
-        'pydantic==2.5.3',
+        'pydantic==1.10.10',
         'pydantic-core==2.14.6',
         'python-dotenv==1.0.0',
         'sniffio==1.3.0',
