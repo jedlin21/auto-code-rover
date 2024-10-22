@@ -183,10 +183,6 @@ class OpenaiModel(Model):
             output_tokens = int(usage_stats.completion_tokens)
             cost = self.calc_cost(input_tokens, output_tokens)
 
-            common.thread_cost.process_cost += cost
-            common.thread_cost.process_input_tokens += input_tokens
-            common.thread_cost.process_output_tokens += output_tokens
-
             raw_response = response.choices[0].message
             # log_and_print(f"Raw model response: {raw_response}")
             content = self.extract_resp_content(raw_response)

@@ -21,12 +21,6 @@ from auto_code_rover.raw_tasks import RawGithubTask
 app = Flask(__name__)
 
 
-def initialize_thread_cost():
-    common.thread_cost.process_cost = 0.0
-    common.thread_cost.process_input_tokens = 0
-    common.thread_cost.process_output_tokens = 0
-
-
 @app.route("/api/run_github_issue", methods=["POST"])
 @cross_origin(origin="http://localhost:3000")  # nextjs cross origin
 def run_github_issue():
@@ -91,7 +85,6 @@ def run_github_issue():
             print_queue.put(f"{json.dumps(data)}</////json_end>")
 
         def run(task, callback):
-            initialize_thread_cost()
             callback(
                 {"category": "issue_info", "problem_statement": task.problem_statement}
             )
