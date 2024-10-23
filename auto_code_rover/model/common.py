@@ -9,9 +9,6 @@ from auto_code_rover.log import log_and_cprint
 # we define the accumulators here.
 
 thread_cost = threading.local()
-thread_cost.process_cost = 0.0
-thread_cost.process_input_tokens = 0
-thread_cost.process_output_tokens = 0
 
 
 class Model(ABC):
@@ -60,11 +57,10 @@ class Model(ABC):
             "model": self.name,
             "input_cost_per_token": self.cost_per_input,
             "output_cost_per_token": self.cost_per_output,
-            "total_input_tokens": thread_cost.process_input_tokens,
-            "total_output_tokens": thread_cost.process_output_tokens,
-            "total_tokens": thread_cost.process_input_tokens
-            + thread_cost.process_output_tokens,
-            "total_cost": thread_cost.process_cost,
+            "total_input_tokens": "N/A",
+            "total_output_tokens": "N/A",
+            "total_tokens": "N/A",
+            "total_cost": "N/A",
         }
 
 
