@@ -29,7 +29,7 @@ setup(
         'lxml>=5.1.0, <6.0.0',
         'openai>=1.30.0, <2.0.0',
         'pydantic>=2.5.0, <3.0.0',
-        'pydantic-core>=2.14.0, <2.15.0',
+        'pydantic-core>=2.14.0, <3.0.0',
         'python-dotenv>=1.0.0, <2.0.0',
         'sniffio>=1.3.0, <2.0.0',
         'soupsieve>=2.5, <3.0.0',
