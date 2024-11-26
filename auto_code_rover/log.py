@@ -67,7 +67,7 @@ def print_acr(
     msg = replace_html_tags(msg)
     markdown = Markdown(msg)
 
-    name = "AutoCodeRover"
+    name = "Deep NEXT"  # "AutoCodeRover"
     if desc:
         title = f"{name} ({desc})"
     else:
